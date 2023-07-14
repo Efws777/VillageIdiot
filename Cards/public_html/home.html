@@ -1,0 +1,118 @@
+<!--
+  This is the html for the homepage of village idiot. It is linked to home.js and includes all of the 
+  text for each of the three modals.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>VILLAGE IDIOT</title>
+</head>
+<body>
+
+  <div class="segment" id="header">
+    <h1>VILLAGE IDIOT</h1> 
+    <div id = greeting></div>
+    <div id = "accountDiv">
+      <button id="accountButton" type="button" onclick="accountLoad()">Community</button>
+    </div>
+    <script>
+    u = localStorage.getItem('username');
+    u = JSON.stringify(u);
+    u = u.split(":")
+    u = u[1]
+    u = u.substring(2, u.length - 4)
+    text = "Hello " + u + "!";
+    let x = document.getElementById('greeting');
+    x.innerText = text;
+    </script>
+  </div>
+    <div id="play">
+        <br>
+    <div><h1><u>PLAY</u></h1></div>
+    <input type="button" onclick="playPeople()" value="2-PLAYER" class = "playButton">
+    <span id="or">OR</span>
+    <input type="button" onclick="playBots()" value="3-PLAYER" class = "playButton">
+  </div>
+
+
+  <div id="options">
+        <br>
+    <div><h1><u>OPTIONS</u></h1></div>
+    <button class="optionsButtons" id="questionButton"><img src="img/question.png" alt="question"></button>
+    <button class="optionsButtons" id="ratingButton"><img src="img/rating.png" alt="question"></button>
+    <button class="optionsButtons" id="statsButton"><img src="img/stats.png" alt="stats"></button>
+  </div>
+
+<div id="modal" class="modal">
+
+    <div id="modal-content">
+      <span class="close">&times;</span>
+      <h1>HOW TO PLAY</h1>
+      <p>The goal of the game is to get rid of all your cards, and the last person to get rid of their cards is the “Village Idiot”. 
+        Each player has to play a higher card than the person before them. You can play cards of the same rank (number) as the person before you. 
+        If you cannot play on a card, you must pick up the whole discard pile. You can also play more than one card of the same rank (number) but 
+        you do not have to.</p>
+        
+        <p> Aces are high and there are special cards: </p>
+        <ul>
+        <li>2s - you can play this on anything, and you can play anything on a 2. Basically acts as a reset back to low cards.</li>
+        <li>10s - can be played on anything, clears the discard pile (moved off to the side) and the player who played the 10 gets to go again.</li>
+        <li>7s - have to be played in order (can play on 6 or lower), and the next person has to play less than a 7 (not including 7).</li>
+        <li>8s - have to be played in order, they skip the next person. If you play more than one, skips the next that many people</li>
+        </ul>
+        <p>
+        The game is played with 2 or 3 players. To set up the game, each player is given 3 cards facedown, 3 cards face-up, and 3 cards for their 
+        hand. Play moves clockwise. If you have less than 3 cards after your turn, you draw 
+        from the draw pile until you have 3 cards again. If you have more than 3 cards, you do not draw. </p>
+        
+        <p>You keep playing until you get rid of all the cards in your hand, then you pick up the three faceup cards. 
+        Once you have no more cards in your hand again, you flip over the facedown cards one at a time and it is up to chance whether it is higher 
+        than the card that's on top of the pile. If it is lower, you must pick up the pile and get rid of those cards before flipping over another facedown 
+        card. Play continues until someone runs out of cards, and they win.
+        </p>
+    </div>
+  
+  </div>
+
+  <div id="statsModal" class="modal">
+
+    <div id="modal-stats">
+      <h1>USER STATS</h1>
+      <ul id = statsList>
+      <li>Wins:</li>
+      <li>Losses:</li>
+      <li>Games played:</li>
+      <li>Win Percentage:</li>
+      </ul>
+    </div>
+  
+  </div>
+
+  <div id="ratingModal" class="modal">
+
+    <div id="modal-rating">
+      <span class="close">&times;</span>
+      <h1>PLEASE RATE OUR GAME BELOW!</h1>
+      <form>
+        <label for="rating">Rating (1-10):</label>
+        <input id="rating" type="number" required  min="1" max="10">
+        <br>
+        <label for="positives">What do you like about our game/site?</label>
+        <textarea rows="3" cols="30" id="positives" name="positives" ></textarea>
+        <br>
+        <label for="improve">In what ways can we improve our game/site?</label>
+        <textarea rows="3" cols="30" id="improve" name="improve" ></textarea>
+        <br>
+        <br>
+        <input type="button" onclick="saveReview();" value="Submit Review" id="submitReview">
+        </form>
+    </div>
+  
+  </div>
+
+  <script src="./home.js"></script>
+</body>
+</html>

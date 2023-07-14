@@ -1,0 +1,534 @@
+/**
+ * This is the css file linked to all five html pages.
+ */
+
+/*All three pages*/
+#playTEST{
+  font-size: 18px;
+}
+
+#header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 20vh;
+  background-color: #f98c1e;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  font-size: xx-large;
+  font-family: fantasy;
+  margin: 0px;
+  overflow:hidden;
+  z-index: 10;
+  position: fixed;
+}
+
+/*gameplay page*/
+#card_table{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left:-450px;
+    width: 900px;
+    height:500px;
+    background-color: rgb(6, 103, 4);
+    z-index: 4;
+}
+
+#startButton {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 103, 4);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 6;
+  left: 32%;
+  top: 31%;
+  transform: scale(.75);
+}
+
+#tableBackground {
+  width: 100vw;
+  height: 70vh;
+  top: 20%;
+  background-color: #3dbf0e;
+  vertical-align: middle;
+  font-size: large;
+  font-family: fantasy;
+  margin: 0px;
+  text-align: center;
+  position: fixed;
+}
+
+#gameOptions {
+  width: 100vw;
+  height: 15vh;
+  top: 90%;
+  background-color: #eb1599;
+  vertical-align: middle;
+  font-size: 48px;
+  font-family: fantasy;
+  margin: 0px;
+  text-align: left;
+  position: fixed;
+}
+
+#playOne{
+  background-color: white;
+  border: none;
+  color: black;
+  width: 150px;
+  height: 51px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-family: fantasy;
+  cursor: pointer;
+  position: fixed;
+  bottom: 80px;
+  left: 38%;
+  z-index: 5;
+}
+
+#playAll {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 150px;
+  height: 51px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-family: fantasy;
+  cursor: pointer;
+  position: fixed;
+  bottom: 80px;
+  left: 53%;
+  z-index: 5;
+}
+
+#questionButtonGame {
+  float: left;
+  background-color: #eb1599;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#questionButtonGame img {
+  height: 75px;
+}
+
+#statsButtonGame {
+  float: right;
+  background-color: #eb1599;
+  color: #fff;
+  border: none;
+  border-radius: 80%;
+  cursor: pointer;
+}
+
+#statsButtonGame img {
+  height: 75px;
+}
+
+#rulesText {
+  position: fixed;
+  top: 90%;
+  left: 8%;
+}
+
+#statsText {
+  position: fixed;
+  top: 90%;
+  right: 8%;
+}
+
+#clock {
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 48px;
+  font-family: fantasy;
+  position: fixed;
+  top: 8%;
+  right: 0%;
+  z-index: 2;
+  width: 25vw;
+  height: 20vh;
+}
+
+/*login page*/
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: Arial;
+  font-size: 15pt;
+  margin: 0px;
+  padding: 0px;
+}
+
+#login {
+  width: 100vw;
+  height: 40vh;
+  background-color: #3dbf0e;
+  vertical-align: middle;
+  font-size: large;
+  font-family: fantasy;
+  margin: 0px;
+  text-align: center;
+  top: 20%;
+  position: fixed;
+}
+
+#create {
+  width: 100vw;
+  height: 40vh;
+  background-color: #eb1599;
+  vertical-align: middle;
+  font-size: large;
+  font-family: fantasy;
+  margin: 0px;
+  text-align: center;
+  top: 60%;
+  position: fixed;
+}
+
+.cards {
+  width: 13.5%;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 22.5px;
+}
+
+#seven {
+  margin: 0;
+  position: fixed;
+  top: 22.5%;
+  left: 15%;
+}
+
+#ten {
+  margin: 0;
+  position: fixed;
+  top: 22.5%;
+  left: 71.5%;
+}
+
+#queen {
+  margin: 0;
+  position: fixed;
+  top: 62.5%;
+  left: 15%;
+}
+
+#ace {
+  margin: 0;
+  position: fixed;
+  top: 62.5%;
+  left: 71.5%;
+}
+
+#loginButton {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+#createButton {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+#modal-account {
+  background-color: #eb1599;;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  font-family: fantasy;
+}
+
+#modal-login {
+  background-color: #eb1599;;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  font-family: fantasy;
+}
+
+#modal-taken {
+  background-color: #eb1599;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  font-family: fantasy;
+}
+
+/*homepage*/
+#greeting {
+  position: fixed;
+  top: 5%;
+  left: 0.05%;
+  z-index: 2;
+  width: 25vw;
+  height: 20vh;
+  font-size: 30px;
+  padding: 5px;
+}
+
+#accountDiv{
+  position: fixed;
+  top:5%;
+  right: 5%;
+}
+
+#accountButton{
+  font-size: 30px;
+  background-color:  #eb1599;
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+#play {
+  width: 100vw;
+  height: 40vh;
+  background-color: #3dbf0e;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: large;
+  font-family: fantasy;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+  top: 20%;
+  position: fixed;
+}
+
+#play span {
+  font-size: xx-large;
+  }
+
+#options {
+  width: 100vw;
+  height: 40vh;
+  background-color: #eb1599;
+  vertical-align: middle;
+  font-size: large;
+  font-family: fantasy;
+  margin: 0px;
+  text-align: center;
+  top: 60%;
+  position: fixed;
+}
+
+.playButton {
+  background-color: #f98c1e;
+  border: none;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: fantasy;
+  font-size: x-large;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.playButton:hover {
+  background-color: #077d0b; /* Green */
+  color: white;
+}
+
+.optionsButtons {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#questionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb1599;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#questionButton img {
+  height: 125px;
+}
+
+#statsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb1599;
+  color: #fff;
+  border: none;
+  border-radius: 80%;
+  cursor: pointer;
+}
+#statsButton img {
+  height: 125px;
+}
+
+#ratingButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb1599;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#ratingButton img {
+  height: 125px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  z-index: 9;
+}
+
+#modal-content {
+  background-color: #f98c1e;;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-family: fantasy;
+}
+
+#modal-stats {
+  background-color: #3dbf0e;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-family: fantasy;
+}
+
+#modal-rating {
+  background-color: #eb1599;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-family: fantasy;
+}
+
+#submitReview {
+  background-color: white;
+  border: none;
+  color: black;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#statsList {
+  list-style-type: none;
+  font-size: 32px;
+}
+
+/*Accounts page*/
+#left {
+  position:fixed;
+  top:20%;
+  left:0px;
+  bottom:0px;
+  width:50%;
+  background-color: #3dbf0e;
+  font-family: fantasy;
+}
+
+#right {
+  position:fixed;
+  top:20%;
+  right:0px;
+  bottom:0px;
+  width:50%;
+  background-color: #eb1599;
+  overflow-y:scroll ;
+  font-family: fantasy;
+}
+
+#search{
+  background-color: white;
+  border: none;
+  color: black;
+  width: 100px;
+  height: 25px;
+  font-family: fantasy;
+  display: inline;
+  cursor: pointer;
+}
+
+#searchBar{
+  font-size:18px;
+}
+
+.itemDiv{
+  padding:20px;
+}

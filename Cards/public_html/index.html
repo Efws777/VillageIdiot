@@ -1,0 +1,83 @@
+<!--
+  This is the html for the login page of village idiot. It is linked to login.js and includes all of the 
+  text for each of the three modals.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>VILLAGE IDIOT LOGIN</title>
+</head>
+<body>
+
+  <div class="segment" id="header">
+    <h1>VILLAGE IDIOT</h1>
+  </div>
+  <!--<button id="play" onClick="gamePage()">Play Now!</button>-->
+    <div id="login">
+      <img src="img/7spades.png" alt = "seven" class="cards" id="seven">
+      <img src="img/10hearts.png" alt = "ten" class="cards" id="ten">
+        <br>
+    <div><h1>LOG IN</h1></div>
+    <label for="usernameLogin">Username</label>
+    <input id="usernameLogin" type="text" required>
+    <br>
+    <label for="passwordLogin">Password</label>
+    <input id="passwordLogin" type="password" required>
+    <br>
+    <br>
+    <input type="button" onclick="login();" value="Log in" id="loginButton">
+  </div>
+
+
+  <div id="create">
+    <img src="img/Queendiamonds.png" alt = "queen" class="cards" id="queen">
+    <img src="img/Aceclubs.png" alt = "ace" class="cards" id="ace">
+        <br>
+    <div><h1>CREATE AN ACCOUNT</h1></div>
+    <form>
+    <label for="username">Username</label>
+    <input id="username" type="text" required>
+    <br>
+    <label for="password">Password</label>
+    <input id="password" type="password" pattern="^.{8,}$" required>
+    <br>
+    <br>
+    <input type="button" onclick="createAccount();" value="Create Account" id="createButton">
+    </form>
+  </div>
+
+  <div id="modal" class="modal">
+
+    <div id="modal-account">
+      <span class="close">&times;</span>
+      ACCOUNT SUCCESSFULLY CREATED!!!
+    </div>
+  
+  </div>
+
+  <div id="loginModal" class="modal">
+
+    <div id="modal-login">
+      <span class="close">&times;</span>
+      PLEASE DOUBLE CHECK YOUR USERNAME OR PASSWORD
+    </div>
+  
+  </div>
+
+  <div id="takenModal" class="modal">
+
+    <div id="modal-taken">
+      <span class="close">&times;</span>
+      USERNAME ALREADY TAKEN. PLEASE CHOOSE ANOTHER!
+    </div>
+  
+  </div>
+
+<script src="./login.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

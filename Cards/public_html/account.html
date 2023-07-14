@@ -1,0 +1,27 @@
+<!--
+  This is the html for the account page of village idiot. It is linked to account.js.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>VILLAGE IDIOT</title>
+    <script src="./account.js"></script>
+    <meta charset="utf-8">
+</head>
+<body onload="getUsername(); getStats();">
+    <div id="header">
+        <h1 id="nameHeader">&nbsp;</h1>
+    </div>
+    <div id="content">
+        <div id="left" ></div>
+        <div id = "right">
+            <div id="searchDiv">
+                <input type="text" id="searchBar">
+                <br>
+                <button id = "search" type = "button" onclick="searchUsers()">Search Users</button>
+            </div>
+        </div>
+    </div>
+</body>
