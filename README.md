@@ -2,4 +2,4 @@
 
 Implementation of Village Idiot card game.
 
-Play now: http://146.190.68.222:3000
+PLAY NOW: http://146.190.68.222:3000
